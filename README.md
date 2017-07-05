@@ -62,10 +62,10 @@ group by articles.author</br>
 order by views desc;</br>
 
 +----------------- |
-|Column  |  Type   |</br>
-+------------------|</br>
-| author | integer |</br>
-| views  | bigint  |</br>
+|Column  |  Type   |
++------------------|
+| author | integer |
+| views  | bigint  |
 +--------+---------+
 
 create view b1 as</br>
