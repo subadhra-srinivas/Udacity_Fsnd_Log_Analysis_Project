@@ -62,7 +62,7 @@ group by articles.author</br>
 order by views desc;</br>
 
 Column  |  Type   |</br>
---------+---------+</br>
+-------- :-------:|</br>
  author | integer |</br>
  views  | bigint  |</br>
 
