@@ -24,7 +24,7 @@ Virtual Box
 
 **SetUp:**
 
-1.Install Vagrant and Virtual Box
+1.Install Vagrant and Virtual Box.
 2.Download or clone the repository https://github.com/udacity/fullstack-nanodegree-vm.
 
 **To Run:**
@@ -47,9 +47,9 @@ Use psql -d news to connect to database.
 
 The database includes three tables:
 
-The authors table includes information about the authors of articles.
-The articles table includes the articles themselves.
-The log table includes one entry for each time a user has accessed the site.
+The authors table includes information about the authors of articles.</br>
+The articles table includes the articles themselves.</br>
+The log table includes one entry for each time a user has accessed the site.</br>
 
 **Creating views:**
 
