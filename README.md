@@ -1,6 +1,7 @@
 # Udacity_Fsnd_Log_Analysis_Project
 
 **About the Project:**
+
 This project will strech our SQL skills and get practice interacting with aa large database
 over a million rows both from the command line and from the code. We will build and refine
 complex queries and then use them to draw business conclusions from data. The task is to
@@ -14,6 +15,7 @@ These are the questions the reporting tools should answer
 3. On which dyas did more than 1% of requests lead to errors?
 
 **Tools Needed:**
+
 Python3
 Vagrant
 Virtual Box
@@ -51,51 +53,51 @@ The log table includes one entry for each time a user has accessed the site.
 
 **Creating views:**
 
-Create view articlesauthors_v as
-select articles.author, count(log.path) as
-views from articles,log
-where log.path like '%'||articles.slug and
-log.status like '%200%'
-group by articles.author
-order by views desc;
+Create view articlesauthors_v as</br>
+select articles.author, count(log.path) as</br>
+views from articles,log</br>
+where log.path like '%'||articles.slug and</br>
+log.status like '%200%'</br>
+group by articles.author</br>
+order by views desc;</br>
 
-Column |  Type    |
---------+---------+
- author | integer |
- views  | bigint  |
+Column |  Type    |</br>
+--------+---------+</br>
+ author | integer |</br>
+ views  | bigint  |</br>
 
 
-create view b1 as
-select to_char(time,'FMMonth FMDD, YYYY') as date, count(status) as total from log
-where status = '404 NOT FOUND'
-group by to_char(time,'FMMonth FMDD, YYYY');
+create view b1 as</br>
+select to_char(time,'FMMonth FMDD, YYYY') as date, count(status) as total from log</br>
+where status = '404 NOT FOUND'</br>
+group by to_char(time,'FMMonth FMDD, YYYY');</br>
 
-Column |  Type   |
---------+--------+
- date   | text   |
- total  | bigint |
+Column |  Type   |</br>
+--------+--------+</br>
+ date   | text   |</br>
+ total  | bigint |</br>
 
-create view b2 as
-select to_char(time,'FMMonth FMDD, YYYY') as date, count(status) as total from log
-group by to_char(time,'FMMonth FMDD, YYYY');
+create view b2 as</br>
+select to_char(time,'FMMonth FMDD, YYYY') as date, count(status) as total from log</br>
+group by to_char(time,'FMMonth FMDD, YYYY');</br>
 
- Column |  Type  | Modifiers
---------+--------+-----------
- date   | text   |
- total  | bigint |
+ Column |  Type  |</br> 
+--------+--------+</br>
+ date   | text   |</br>
+ total  | bigint |</br>
 
-create view rate_val as
-select b2.date,round(cast(cast(b1.total*100 as float)/cast(b2.total as float) as numeric),2)
-as val from b1,b2
-where b1.date = b2.date;
+create view rate_val as</br>
+select b2.date,round(cast(cast(b1.total*100 as float)/cast(b2.total as float) as numeric),2)</br>
+as val from b1,b2</br>
+where b1.date = b2.date;</br>
 
-Column |  Type   | Modifiers
---------+---------+-----------
- date   | text    |
- val    | numeric |
+Column |  Type    |</br>
+--------+---------+</br>
+ date   | text    |</br>
+ val    | numeric |</br>
 
 **Running the queries:**
 
-From the vagrant directory inside vitual machine run news_data.py
-$ python3 news_data.py
+From the vagrant directory inside vitual machine run news_data.py</br>
+$ python3 news_data.py</br>
 
