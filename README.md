@@ -2,7 +2,7 @@
 
 **About the Project:**
 
-This project will strech our SQL skills and get practice interacting with aa large database
+This project will strech our SQL skills and get practice interacting with a large database
 over a million rows both from the command line and from the code. We will build and refine
 complex queries and then use them to draw business conclusions from data. The task is to
 create a reporting tool that points out reports (in plain text) based on the data in the
@@ -16,16 +16,16 @@ These are the questions the reporting tools should answer</br>
 
 **Tools Needed:**
 
-Python3
-Vagrant
-Virtual Box
+Python3</br>
+Vagrant</br>
+Virtual Box</br>
 
 **Running the Project:**
 
 **SetUp:**
 
-1.Install Vagrant and Virtual Box.</br>
-2.Download or clone the repository https://github.com/udacity/fullstack-nanodegree-vm.</br>
+1. Install Vagrant and Virtual Box.</br>
+2. Download or clone the repository https://github.com/udacity/fullstack-nanodegree-vm.</br>
 
 **To Run:**
 
