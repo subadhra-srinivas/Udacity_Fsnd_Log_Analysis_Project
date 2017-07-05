@@ -61,12 +61,11 @@ log.status like '%200%'</br>
 group by articles.author</br>
 order by views desc;</br>
 
-+----------------- |
-|Column  |  Type   |
-+------------------|
-| author | integer |
-| views  | bigint  |
-+--------+---------+
+Column |  Type   |</br>
+--------+--------+</br>
+ author | text   |</br>
+ views  | bigint |</br>
+
 
 create view b1 as</br>
 select to_char(time,'FMMonth FMDD, YYYY') as date, count(status) as total from log</br>
