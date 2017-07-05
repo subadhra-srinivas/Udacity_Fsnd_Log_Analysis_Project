@@ -24,8 +24,8 @@ Virtual Box
 
 **SetUp:**
 
-1.Install Vagrant and Virtual Box.
-2.Download or clone the repository https://github.com/udacity/fullstack-nanodegree-vm.
+1.Install Vagrant and Virtual Box.</br>
+2.Download or clone the repository https://github.com/udacity/fullstack-nanodegree-vm.</br>
 
 **To Run:**
 
@@ -35,7 +35,7 @@ Virtual Box
 
 **Download the data:**
 
-Next, download the data here. You will need to unzip this file after downloading it.
+Next, download the data. You will need to unzip this file after downloading it.
 The file inside is called newsdata.sql. Put this file into the vagrant directory,
 which is shared with your virtual machine.
 
