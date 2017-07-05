@@ -9,10 +9,10 @@ create a reporting tool that points out reports (in plain text) based on the dat
 news database. This reporting tool is a Python program using the psycog2 module to connect
 to the database.
 
-These are the questions the reporting tools should answer
-1.What are the most popular three articles ao all times
-2. Who are the most popular article authors at all times
-3. On which dyas did more than 1% of requests lead to errors?
+These are the questions the reporting tools should answer</br>
+1.What are the most popular three articles ao all times</br>
+2. Who are the most popular article authors at all times</br>
+3. On which dyas did more than 1% of requests lead to errors?</br>
 
 **Tools Needed:**
 
@@ -61,7 +61,7 @@ log.status like '%200%'</br>
 group by articles.author</br>
 order by views desc;</br>
 
-Column |  Type    |</br>
+Column  |  Type   |</br>
 --------+---------+</br>
  author | integer |</br>
  views  | bigint  |</br>
